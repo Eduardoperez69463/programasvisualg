@@ -12,10 +12,14 @@ Inicio
 escreval("Digite o valor do saque:")
 leia(saq)
 saldo<-890
-posit<-(saldo>saq)
-negat<-(saldo<saq)
+
+
 escreval("com o saldo de 890 e o saque de ",saq)
+ se (saldo>saq) entao
 escreval("positivo:",posit)
+fimse
+se(saldo<saq)entao
 escreval("negativo:",negat)
+fimse
 
 Fimalgoritmo

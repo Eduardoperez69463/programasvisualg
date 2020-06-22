@@ -6,7 +6,7 @@ Algoritmo "imc"
 Var
 peso,altura:real
 imc:real
-abaixo,peson,sobrepeso,obgrauum,bgraudois,obgrautres:logico
+
 
 
 Inicio
@@ -14,20 +14,26 @@ escreval("Digite sua altura")
 leia(altura)
 escreval("Digite o seu peso")
 leia(peso)
-imc<-(peso/(altura*altura))
-abaixo <-(imc <= 18)
-peson<-((18 < imc)e(imc <= 24))
-sobrepeso<- ((25 < imc) e (imc <= 29))
-obgrauum<-((30 < imc) e (imc <= 34))
-bgraudois<-((35 < imc) e (imc <= 39))
-obgrautres<-(40 <= imc)
+
 
 escreval("Seu imc é de:",imc," então:")
+se(imc <= 18)entao
 escreval("abaixo do peso:",abaixo)
+fimse
+se((18 < imc)e(imc <= 24))entao
 escreval("peso normal:",peson)
+fimse
+se ((25 < imc) e (imc <= 29))entao
 escreval("sobrepeso:",sobrepeso)
+fimse
+se ((30 < imc) e (imc <= 34)) entao
 escreval("obgrau um:",obgrauum)
+fimse
+se ((35 < imc) e (imc <= 39)) entao
 escreval("obgrau dois:",bgraudois)
+fimse
+se (40 <= imc) entao
 escreval("obgrau tres:",obgrautres)
+fimse
 
 Fimalgoritmo

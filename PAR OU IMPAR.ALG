@@ -5,17 +5,18 @@ Algoritmo "par ou impar"
 // Data atual  : 08/06/2020
 Var
 num:inteiro
-par,impar:logico
 
 Inicio
 escreval ("digite um numero, que eu vou falar se ele é par o impar")
 leia(num)
 
-par<-num mod 2 = 0
-impar<-num mod 2 = 1
 
+se (num mod 2 = 0) entao
 escreval("par",par)
+fimse
+se (num mod 2 = 1) entao
 escreval("impar",impar)
+fimse
 
 
 

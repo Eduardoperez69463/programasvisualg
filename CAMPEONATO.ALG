@@ -13,9 +13,11 @@ escreval("Digite sua altura em cm")
 leia(idade)
 escreval("Digite sua idade")
 leia(altura)
-competirum <-(idade >= 18)
-competirdois<-(altura>= (175))
-escreval("você tem alutura pra competir competir?",competirdois)
-escreval("você tem idade pra competir?",competirum)
+se (idade >= 18) e  (altura>= (175)) entao
+escreval("você pode competir competir")
+fimse
+senao entao
+escreval("você não pode  competir?")
+fimse
 
 Fimalgoritmo

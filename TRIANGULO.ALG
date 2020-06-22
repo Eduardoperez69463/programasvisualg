@@ -14,14 +14,25 @@ escreval("digite o segundo lado do triangulo")
 leia(b)
 escreval("digite o terceiro lado do triangulo")
 leia(c)
-triangulo<-((a<(b+c)) e (a>(abs(b-c)))) e ((b>abs(a-c)))) e ((c<(b+a)) e (c>(abs(b-a))))
-equilatero<-(a=b) e (b=c)e (a=c)
-escaleno<-(a<>b)e(b<>c)e(a<>c)
-isoceles<- ((a=b)e(b<>c)) ou ((b=c)e(c<>a)) ou ((a=c)e (c<>b))
+ se triangulo<-((a<(b+c)) e (a>(abs(b-c)))) e ((b>abs(a-c)))) e ((c<(b+a)) e (c>(abs(b-a)))) entao
+se equilatero<-(a=b) e (b=c)e (a=c)entao
+escreval("triangulo equiilatero")
+fimse
+ se escaleno<-(a<>b)e(b<>c)e(a<>c) entao
+ escreval("triangulo escaleno")
+ fimse
+ se isoceles<- ((a=b)e(b<>c)) ou ((b=c)e(c<>a)) ou ((a=c)e (c<>b)) entao
+ escreval("triangulo isoceles")
+ fimse
 escreval(" triangulo:",triangulo)
 escreval("escaleno:",escaleno)
 escreval("equilatero:",equilatero)
 escreval("isoceles:",isoceles)
+
+
+senao
+escreval("valores não formam um triangulo")
+fimse
 
 
 
